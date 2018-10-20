@@ -1,9 +1,6 @@
-<!doctype html>
-<body>
-	<ul>
-		{%for boxer in boxers%}
-		<li>{{boxer.fname}} {{boxer.lname}}</li>
+{% extends "layout.html" %}
+{% block content %}
+		{% for boxer in boxers %}
+			<li><a href="{{boxer.lname}}">{{boxer.fname}} {{boxer.lname}}</a></li>
 		{%endfor%}
-	</ul>
-</body>
-</html>
+{% endblock %}

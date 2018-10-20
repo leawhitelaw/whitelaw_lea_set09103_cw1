@@ -13,10 +13,13 @@ boxers = getJSON('./static/boxer.json')
 def index():
 	return render_template('loop.html', boxers=boxers)
 
-@app.route('/aj')
-def aj():
-	return render_template('aj.html', boxers=boxers)
+@app.route('/<name>')
+def boxer_details(name=None):
+	return render_template('boxer_layout.html', boxers=boxers, name=name)
 
+@app.route('/Joshua/info')
+def joshua():
+	return render_template('Joshua.html', boxers=boxers)
 
 
 if __name__ == "__main__":
