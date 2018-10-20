@@ -2,6 +2,7 @@
 {% block content %}
 	{% for boxer in boxers %}
 			{% if boxer.lname == name %}
+			<img src="/static/{{boxer.lname}}.jpg">
 				<p>Last name: {{boxer.lname}}
 				<br>First name: {{boxer.fname}}
 				<br>Alias: {{boxer.alias}}
