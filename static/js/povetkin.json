@@ -1,0 +1,32 @@
+[
+  {
+    "date":"22/09/18",
+    "opponent":"Joshua",
+    "result":"L",
+    "last_6":"LLLLLL"
+  },
+  {
+    "date":"31/01/18",
+    "opponent":"Price",
+    "result":"W",
+    "last_6":"WLWWLW"
+  },
+  {
+    "date":"15/12/17",
+    "opponent":"Hammer",
+    "result":"W",
+    "last_6":"LWWWWW"
+  },
+  {
+    "date":"01/07/17",
+    "opponent":"Rudenko",
+    "result":"W",
+    "last_6":"WWWWWW"
+  },
+  {
+    "date":"17/12/16",
+    "opponent":"Duhaupas",
+    "result":"W",
+    "last_6":"WLWLWW"
+  }
+]

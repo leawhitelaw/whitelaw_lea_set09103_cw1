@@ -1,10 +1,37 @@
 <!Doctype html>
 <head>
-	<title>Basic Layout Template</title>
+	<title>Heavyweight Boxers</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet"/>
+	<style> body{
+		background-position: right 10px top;
+		padding-top: 50px;
+	}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/static/css/style.css" rel="stylesheet"></script>
 </head>
-<body>
-	<h1>Boxing Heavyweight Champions</h1>
-	<h2>Directory of the worlds favourite heavyweight boxers</h2>
+<body background="/static/media/background.jpg">
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="/">Boxers</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="/">Home</a></li>
+	    </ul>
+			<form class="navbar-form navbar-right" action="/action_page.php" method="POST" name="search_form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search name or alias" name="search">
+      </div>
+      <button type="submit" class="btn btn-default">Search</button>
+    </form>
+	  </div>
+	</nav>
+</nav>
+<div class="container"> <h1>Boxing Heavyweight Champions</h1>
+<h2>Directory of the worlds favourite heavyweight boxers</h2>
 	{% block content %} {% endblock %}
 </body>
 </html>

@@ -1,0 +1,32 @@
+[
+  {
+    "date":"08/09/2018",
+    "opponent":"Kownacki",
+    "result":"L",
+    "last_6":"LLLLLL"
+  },
+  {
+    "date":"18/07/17",
+    "opponent":"Marrone",
+    "result":"W",
+    "last_6":"WLWLLL"
+  },
+  {
+    "date":"09/04/16",
+    "opponent":"Joshua",
+    "result":"L",
+    "last_6":"LLLLLL"
+  },
+  {
+    "date":"09/04/16",
+    "opponent":"Glazkov",
+    "result":"W",
+    "last_6":"WWWWWW"
+  },
+  {
+    "date":"26/09/15",
+    "opponent":"Sandez",
+    "result":"W",
+    "last_6":"WWWWLW"
+  }
+]

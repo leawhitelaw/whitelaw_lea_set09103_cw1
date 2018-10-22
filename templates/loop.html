@@ -1,6 +1,43 @@
 {% extends "layout.html" %}
 {% block content %}
+<style> .list-group-item {
+background-color: transparent;
+border-top: 1px solid #000;
+color: #E8E8E8;
+border-radius: 0;
+font-size: 16px;
+}
+</style>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >Organise by (low to high):</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/byko">Knockouts %</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nationality
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/british">British</a></li>
+          <li><a href="/american">American</a></li>
+          <li><a href="/french">French</a></li>
+        </ul>
+      </li>
+      <li><a href="/height">Height</a></li>
+      <li><a href="/age">Age</a></li>
+			<li><a href="/reach">Reach</a></li>
+			<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stance
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/orthodox">Orthodox</a></li>
+          <li><a href="/southpaw">Southpaw</a></li>
+        </ul>
+    </ul>
+  </div>
+</nav>
 		{% for boxer in boxers %}
-			<li><a href="{{boxer.lname}}">{{boxer.fname}} {{boxer.lname}}</a></li>
+			<li><a href="{{boxer.lname}}" class ="list-group-item">{{boxer.fname}} {{boxer.lname}} ---  "{{boxer.alias}}"</a></li>
 		{%endfor%}
 {% endblock %}

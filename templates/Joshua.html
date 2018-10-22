@@ -1,18 +1,35 @@
 {% extends "boxer_layout.html" %}
 {% block content %}
+<style>
+body{
+  color:#E8E8E8;
+  font-size: 16px;
+}
+a:link{
+  color:black;
+}
+a:visited{
+  color:#909090;
+}
+a:hover{
+  color:#C0C0C0;
+}
+</style>
 	<h2>Anthony Joshua- AJ</h2>
-	<img src="/static/Joshua.gif">
+	<img src="/static/media/Joshua.gif" class="img_responsive" width="300" height="250">
 	<br><p>
 		Anthony Oluwafemi Olaseni Joshua, OBE is a unified heavyweight world champion. He holds three out of the four major world championships in the sport:</p>
 	<ul>
 	<br>IBF(International Boxing Federation) since 2016
 	<br>WBA(World Boxing Association)(Super) since 2017
-	<br>WBO(World Boxing Organization) since 2018	
+	<br>WBO(World Boxing Organization) since 2018
 	</ul>
 <p>He has also held the IBO (Interational Boxing Organization) title since 2017, and at regional level he held the British and Commonwealth heavyweight titles from 2014 to 2016.
 </p>
-<p>Joshua represented England at the 2011 World Championships as an amateur in the superheavyweight division, winning a silver medal. He also represented Great Britain at the 2012 Olympics, winning gold. 
+<p>Joshua represented England at the 2011 World Championships as an amateur in the superheavyweight division, winning a silver medal. He also represented Great Britain at the 2012 Olympics, winning gold.
 </p>
-<p>In 2014, a year after going professional, he was named 'Prospect of the Year by 'The Ring' magazine. In 2017, Joshua's victorious fight against <a href={{'/Klitschko'}}>Wladimir Klitschko</a> was named 'Fight of the Year' by 'The Ring' and the 'Boxing Writers Association of America.'
+<p>
+	In 2014, a year after going professional, he was named 'Prospect of the Year by 'The Ring' magazine. In 2017, Joshua's victorious fight against <a href={{'/Klitschko'}}>Wladimir Klitschko</a> was named 'Fight of the Year' by 'The Ring' and the 'Boxing Writers Association of America.'
 </p>
-{% endblock %}	
+<a href="/Joshua/info/fights">Recent Fights</a>
+{% endblock %}

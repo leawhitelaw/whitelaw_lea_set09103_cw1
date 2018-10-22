@@ -2,8 +2,22 @@
 {% block content %}
 	{% for boxer in boxers %}
 			{% if boxer.lname == name %}
-			<img src="/static/{{boxer.lname}}.jpg">
-				<p>Last name: {{boxer.lname}}
+			<style>
+			body{
+				color:#E8E8E8;
+			}
+			a:link{
+				color:white;
+			}
+			a:visited{
+				color:#BEBEBE;
+			}
+			a:hover{
+				color:#C0C0C0;
+			}
+			</style>
+			<img src="/static/media/{{boxer.lname}}.jpg">
+				<h3>Last name: {{boxer.lname}}
 				<br>First name: {{boxer.fname}}
 				<br>Alias: {{boxer.alias}}
 				<br>Nationality: {{boxer.Nationality}}
@@ -15,8 +29,10 @@
 				<br>Age: {{boxer.age}}
 				<br>Height: {{boxer.height}}
 				<br>Wins/Losses/Draws: {{boxer.wins}}/{{boxer.loses}}/{{boxer.draws}}
-				<br>Percentage Knock-outs: {{boxer.kos}}</p>
-				<a href="/{{boxer.lname}}/info">Futher info and opponents></a>
+				<br>Percentage Knock-outs: {{boxer.kos}}</h3>
+				<div class="container">
+				<a href="/{{boxer.lname}}/info" class="btn" type="button">Futher info and opponents</a>
+			</div>
 		{% endif %}
 	{% endfor %}
 {% endblock %}

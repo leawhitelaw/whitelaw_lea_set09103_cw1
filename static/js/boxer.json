@@ -1,8 +1,8 @@
 [		{
-			"fname":"Anthony", 
+			"fname":"Anthony",
 			"lname":"Joshua",
 			"alias":"AJ",
-			"Nationality":"English",
+			"Nationality":"British",
 			"Pos_in_c":"1/44",
 			"Pos_in_w":"1/1237",
 			"rating":"5",
@@ -14,10 +14,10 @@
 			"loses":0,
 			"draws":0,
 			"kos":"95%"
-			
+
 		},
 		{
-			"fname":"Deontay", 
+			"fname":"Deontay",
 			"lname":"Wilder",
 			"alias":"The Bronze Bomber",
 			"Nationality":"American",
@@ -32,9 +32,9 @@
 			"loses":0,
 			"draws":0,
 			"kos":"98%"
-			
+
 		},{
-			"fname":"Carlos", 
+			"fname":"Carlos",
 			"lname":"Takam",
 			"alias":"N/A",
 			"Nationality":"French",
@@ -49,7 +49,7 @@
 			"loses":5,
 			"draws":1,
 			"kos":"66%"
-			
+
 		},{
 			"fname":"Alexander",
 			"lname":"Povetkin",
@@ -66,12 +66,12 @@
 			"loses":2,
 			"draws":0,
 			"kos":"67%"
-			
+
 		},{
 			"fname":"Joseph",
 			"lname":"Parker",
 			"alias":"Lupesoliali La'auli",
-			"Nationality":"New Zealander",
+			"Nationality":"New Zealand",
 			"Pos_in_c":"1/30",
 			"Pos_in_w":"10/1237",
 			"rating":"4",
@@ -83,7 +83,7 @@
 			"loses":2,
 			"draws":0,
 			"kos":"69%"
-			
+
 		},{
 			"fname":"Wladimir",
 			"lname":"Klitschko",
@@ -100,12 +100,12 @@
 			"loses":5,
 			"draws":0,
 			"kos":"77%"
-			
+
 		},{
 			"fname":"Tyson",
 			"lname":"Fury",
 			"alias":"Gypsy King",
-			"Nationality":"English",
+			"Nationality":"British",
 			"Pos_in_c":"2/44",
 			"Pos_in_w":"5/1237",
 			"rating":"5",
@@ -117,7 +117,7 @@
 			"loses":0,
 			"draws":0,
 			"kos":"70%"
-			
+
 		},{
 			"fname":"Dominic",
 			"lname":"Breazeale",
@@ -134,7 +134,7 @@
 			"loses":1,
 			"draws":0,
 			"kos":"85%"
-			
+
 		},{
 			"fname":"Eric",
 			"lname":"Molina",
@@ -151,12 +151,12 @@
 			"loses":5,
 			"draws":0,
 			"kos":"61%"
-			
+
 		},{
 			"fname":"Dylian",
 			"lname":"Whyte",
 			"alias":"The Body Snatcher",
-			"Nationality":"English",
+			"Nationality":"British",
 			"Pos_in_c":"3/44",
 			"Pos_in_w":"6/1237",
 			"rating":"5",
@@ -168,7 +168,7 @@
 			"loses":1,
 			"draws":0,
 			"kos":"68%"
-			
+
 		},{
 			"fname":"Charles",
 			"lname":"Martin",
@@ -185,12 +185,12 @@
 			"loses":2,
 			"draws":1,
 			"kos":"82%"
-			
+
 		},{
 			"fname":"Johann",
 			"lname":"Duhaupas",
 			"alias":"Reptile",
-			"Nationality":"France",
+			"Nationality":"French",
 			"Pos_in_c":"1/15",
 			"Pos_in_w":"27/1237",
 			"rating":"3.5",
@@ -202,7 +202,7 @@
 			"loses":5,
 			"draws":0,
 			"kos":"57%"
-			
+
 		},{
 			"fname":"Jarrell",
 			"lname":"Miller",
@@ -219,7 +219,7 @@
 			"loses":0,
 			"draws":1,
 			"kos":"83%"
-			
+
 		},
 		{
 			"fname":"Louis",
@@ -237,6 +237,6 @@
 			"loses":1,
 			"draws":0,
 			"kos":"78%"
-			
+
 		}
 ]

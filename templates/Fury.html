@@ -1,7 +1,22 @@
 {% extends "layout.html" %}
 {% block content %}
+<style>
+body{
+  color:#E8E8E8;
+  font-size: 16px;
+}
+a:link{
+  color:black;
+}
+a:visited{
+  color:#909090;
+}
+a:hover{
+  color:#C0C0C0;
+}
+</style>
 	<h2>Tyson Fury</h2>
-	<img src="/static/fury.gif">
+	<img src="/static/media/fury.gif" class="img_responsive" width="350" height="350">
 <p>
 Tyson Fury is a British professional boxer. In 2015 he won the unified WBA (World Boxing Association)(Super), IBF (International Boxing Federation), WBO (World Boxing Organization), IBO (International Boxing Organization), 'Ring' magazine and 'lineal' heavyweight titles, after defeating long-reigning world champion <a href="/Klitschko">Wladimir Klitschko</a>. The victory earned Fury 'Fighter of the Year' and 'Upset of the Year' awards by 'The Ring.'
 </p>
@@ -10,4 +25,5 @@ He was subsequently stripped of the IBF title later that year for being unable t
 </p>
 <p>Having initially been denied the opportunity to fight for Ireland at the Olympic Games, Fury was permitted to represent both Great Britain and Ireland after tracing his family lineage to relatives in Belfast and Galway. He has represented both England and Ireland as an amateur, winning the ABA super-heavyweight title in 2008 before turning professional later that year. At regional level he held the British and English heavyweight titles twice each, as well as the European, Commonwealth, and Irish heavyweight titles.
 </p>
+<a href="/Fury/info/fights">Recent Fights</a>
 {% endblock %}

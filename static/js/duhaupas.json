@@ -1,0 +1,32 @@
+[
+  {
+    "date":"28/04/18",
+    "opponent":"Miller",
+    "result":"L",
+    "last_6":"LLLLLL"
+  },
+  {
+    "date":"14/12/17",
+    "opponent":"Outah",
+    "result":"W",
+    "last_6":"WWLWWW"
+  },
+  {
+    "date":"16/09/17",
+    "opponent":"Orlov",
+    "result":"W",
+    "last_6":"WLWLWL"
+  },
+  {
+    "date":"22/04/17",
+    "opponent":"Gogishvili",
+    "result":"W",
+    "last_6":"LLWWLW"
+  },
+  {
+    "date":"17/12/16",
+    "opponent":"Povetkin",
+    "result":"L",
+    "last_6":"LWLLLL"
+  }
+]

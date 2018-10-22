@@ -1,0 +1,32 @@
+[
+  {
+    "date":"04/11/17",
+    "opponent":"Molina",
+    "result":"W",
+    "last_6":"WLWWLW"
+  },
+  {
+    "date":"25/02/17",
+    "opponent":"Ugonoh",
+    "result":"W",
+    "last_6":"WWWWWW"
+  },
+  {
+    "date":"25/06/16",
+    "opponent":"Joshua",
+    "result":"L",
+    "last_6":"LLLLLL"
+  },
+  {
+    "date":"23/01/16",
+    "opponent":"Mansour",
+    "result":"W",
+    "last_6":"WWLWWD"
+  },
+  {
+    "date":"26/09/15",
+    "opponent":"Kassi",
+    "result":"W",
+    "last_6":"LWWWLD"
+  }
+]
