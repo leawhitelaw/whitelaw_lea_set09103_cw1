@@ -15,23 +15,38 @@
 			a:hover{
 				color:#C0C0C0;
 			}
+			img{
+				-webkit-filter: grayscale(100%);
+				fitler:grayscale(100%);
+			}
 			</style>
 			<img src="/static/media/{{boxer.lname}}.jpg">
 				<h3>Last name: {{boxer.lname}}
 				<br>First name: {{boxer.fname}}
-				<br>Alias: {{boxer.alias}}
-				<br>Nationality: {{boxer.Nationality}}
-				<br>Position in own country: {{boxer.Pos_in_c}}
-				<br>Position in world: {{boxer.Pos_in_w}}
-				<br>BoxRec Rating: {{boxer.rating}}
-				<br>Reach: {{boxer.reach}}
-				<br>Stance: {{boxer.stance}}
-				<br>Age: {{boxer.age}}
-				<br>Height: {{boxer.height}}
+				<br><a href="/">Alias:</a> {{boxer.alias}}
+				{% if boxer.Nationality == 'French' %}
+				  <br><a href="/{{boxer.Nationality}}">Position in own country:</a> {{boxer.Pos_in_c}}
+					<br>Nationality:<a href="/{{boxer.Nationality}}">{{boxer.Nationality}}</a>
+				{% elif boxer.Nationality == 'British'%}
+					<br><a href="/{{boxer.Nationality}}">Position in own country:</a> {{boxer.Pos_in_c}}
+					<br>Nationality:<a href="/{{boxer.Nationality}}">{{boxer.Nationality}}</a>
+				{% elif boxer.Nationality == 'American'%}
+					<br><a href="/{{boxer.Nationality}}">Position in own country:</a> {{boxer.Pos_in_c}}
+					<br>Nationality:<a href="/{{boxer.Nationality}}">{{boxer.Nationality}}</a>
+				{% else %}
+					<br>Nationality: {{boxer.Nationality}}
+					<br>Position in own country: {{boxer.Pos_in_c}}
+				{% endif %}
+				<br><a href="/world">Position in world:</a> {{boxer.Pos_in_w}}
+				<br><a href="/rating">BoxRec Rating:</a> {{boxer.rating}}
+				<br><a href="/reach">Reach:</a> {{boxer.reach}}
+				<br>Stance: <a href="/{{boxer.stance}}">{{boxer.stance}}</a>
+				<br><a href="/age">Age:</a> {{boxer.age}}
+				<br><a href="/height">Height:</a> {{boxer.height}}
 				<br>Wins/Losses/Draws: {{boxer.wins}}/{{boxer.loses}}/{{boxer.draws}}
-				<br>Percentage Knock-outs: {{boxer.kos}}</h3>
+				<br><a href="/byko">Percentage Knock-outs:</a> {{boxer.kos}}</h3>
 				<div class="container">
-				<a href="/{{boxer.lname}}/info" class="btn" type="button">Futher info and opponents</a>
+				<button onclick="location.href='/{{boxer.lname}}/info'" class="btn" type="button">Futher info and opponents</button>
 			</div>
 		{% endif %}
 	{% endfor %}

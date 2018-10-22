@@ -36,7 +36,7 @@
 		},{
 			"fname":"Carlos",
 			"lname":"Takam",
-			"alias":"N/A",
+			"alias":"",
 			"Nationality":"French",
 			"Pos_in_c":"2/15",
 			"Pos_in_w":"42/1237",
@@ -206,7 +206,7 @@
 		},{
 			"fname":"Jarrell",
 			"lname":"Miller",
-			"alias":"Jarrell King Miller",
+			"alias":"Big Baby",
 			"Nationality":"American",
 			"Pos_in_c":"2/330",
 			"Pos_in_w":"4/1237",

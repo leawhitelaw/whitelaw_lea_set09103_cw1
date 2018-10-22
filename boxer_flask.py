@@ -51,12 +51,28 @@ def index():
 #sort by kos
 @app.route('/byko', methods=['GET','POST'])
 def kos():
-	sorted_boxers=sorted(boxers, key=lambda d:d["kos"])
+	sorted_boxers=sorted(boxers, key=lambda d:d["kos"], reverse=True)
 	if request.method=='POST':
 		return search_bar()
 	return render_template('loop.html', boxers=sorted_boxers)
+
+#sort by position in world
+@app.route('/world', methods=['GET','POST'])
+def world():
+	sorted_world=sorted(boxers, key=lambda d:d["Pos_in_w"])
+	if request.method=='POST':
+		return search_bar()
+	return render_template('loop.html', boxers=sorted_world)
+
+#sort by BoxRec rating
+@app.route('/rating', methods=['GET','POST'])
+def rating():
+	sorted_rating=sorted(boxers, key=lambda d:d["rating"], reverse=True)
+	if request.method=='POST':
+		return search_bar()
+	return render_template('loop.html', boxers=sorted_rating)
 #sort by stance
-@app.route('/orthodox', methods=['GET','POST'])
+@app.route('/Orthodox', methods=['GET','POST'])
 def ortho():
 	if request.method=='POST':
 		return search_bar()
@@ -66,7 +82,7 @@ def ortho():
 			ortho_boxers.append(boxer)
 	return render_template('loop.html', boxers=ortho_boxers)
 
-@app.route('/southpaw', methods=['GET','POST'])
+@app.route('/Southpaw', methods=['GET','POST'])
 def southp():
 	if request.method=='POST':
 		return search_bar()
@@ -77,7 +93,7 @@ def southp():
 	return render_template('loop.html', boxers=southp_boxers)
 
 #sort by british boxers
-@app.route('/british', methods=['GET','POST'])
+@app.route('/British', methods=['GET','POST'])
 def british():
 	if request.method=='POST':
 		return search_bar()
@@ -88,7 +104,7 @@ def british():
 		sorted_b_boxers=sorted(british_boxers, key=lambda d:d["Pos_in_c"])
 	return render_template('loop.html', boxers=sorted_b_boxers)
 #sort by american boxers
-@app.route('/american', methods=['GET','POST'])
+@app.route('/American', methods=['GET','POST'])
 def american():
 	if request.method=='POST':
 		return search_bar()
@@ -99,7 +115,7 @@ def american():
 		sorted_a_boxers=sorted(american_boxers, key=lambda d:d["Pos_in_c"])
 	return render_template('loop.html', boxers=sorted_a_boxers)
 #sort by french boxers
-@app.route('/french', methods=['GET','POST'])
+@app.route('/French', methods=['GET','POST'])
 def french():
 	if request.method=='POST':
 		return search_bar()
@@ -113,21 +129,21 @@ def french():
 def height():
 	if request.method=='POST':
 		return search_bar()
-	sorted_height=sorted(boxers, key=lambda d:d["height"])
+	sorted_height=sorted(boxers, key=lambda d:d["height"], reverse=True)
 	return render_template('loop.html', boxers=sorted_height)
 #sort by age
 @app.route('/age', methods=['GET','POST'])
 def age():
 	if request.method=='POST':
 		return search_bar()
-	sorted_age=sorted(boxers, key=lambda d:d["age"])
+	sorted_age=sorted(boxers, key=lambda d:d["age"], reverse=True)
 	return render_template('loop.html', boxers=sorted_age)
 #sort by reach
 @app.route('/reach', methods=['GET','POST'])
 def reach():
 	if request.method=='POST':
 		return search_bar()
-	sorted_reach=sorted(boxers, key=lambda d:d["reach"])
+	sorted_reach=sorted(boxers, key=lambda d:d["reach"], reverse=True)
 	return render_template('loop.html', boxers=sorted_reach)
 #go to boxer info page with picture
 @app.route('/<name>',methods=['GET', 'POST'])
@@ -296,6 +312,12 @@ def miller_fights():
 	if request.method=='POST':
 		return search_bar()
 	return render_template('opponent_layout.html', opponents=miller_ops)
+
+@app.route('/Whyte/info/fights',methods=['GET','POST'])
+def whyte_fights():
+	if request.method=='POST':
+		return search_bar()
+	return render_template('opponent_layout.html', opponents=whyte_ops)
 
 @app.errorhandler(404)
 def page_not_found(error):
